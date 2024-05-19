@@ -8,7 +8,8 @@ export const thanos = async () => {
 
     for (let i = 0; i < contacts.length; i++) {
       if (Math.random() >= 0.5) {
-        contacts.splice(i);
+        contacts.splice(i, 1);
+        i--;
       }
     }
 
